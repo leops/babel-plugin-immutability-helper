@@ -1,0 +1,41 @@
+{
+  "name": "babel-plugin-immutability-helper",
+  "version": "0.1.0",
+  "description": "Like immutability-helper, at compile time",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel -d lib --ignore __tests__ src",
+    "prepublish": "babel -d lib --ignore __tests__ src --minified",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leops/babel-plugin-immutability-helper.git"
+  },
+  "keywords": [
+    "immutability",
+    "immutable",
+    "babel",
+    "react",
+    "helper",
+    "plugin"
+  ],
+  "author": "leops <npm@leops.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leops/babel-plugin-immutability-helper/issues"
+  },
+  "homepage": "https://github.com/leops/babel-plugin-immutability-helper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-tester": "^4.0.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.2.1"
+  },
+  "engines": {
+    "node": ">=7.7.1"
+  },
+  "peerDependencies": {
+    "immutability-helper": "^2.4.0"
+  }
+}
